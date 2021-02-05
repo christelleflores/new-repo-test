@@ -16,10 +16,12 @@ public class Hello {
 			} else if (response.equals("Bad")) {
 				System.out.println("Hope it gets better!");
 				answered = true;
+			} else {
+				System.out.println("If you did not say Good or Bad there will be no response. Goodbye!");
+				answered = true;
 			}
 
 		}
-
 	}
 
 }
