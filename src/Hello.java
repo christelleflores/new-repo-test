@@ -6,14 +6,20 @@ public class Hello {
 		System.out.println("Hello!");
 		System.out.println("How are you?");
 		String response = scanner.nextLine();
-		if(response == "Good") {
-			System.out.println("Great!");
+
+		boolean answered = false;
+
+		while (answered == false) {
+			if (response.equals("Good")) {
+				System.out.println("Great!");
+				answered = true;
+			} else if (response.equals("Bad")) {
+				System.out.println("Hope it gets better!");
+				answered = true;
+			}
+
 		}
-		else if(response == "Bad") {
-			System.out.println("Hope it gets better!");
-		}
-		else {
-			System.out.println("Sorry, the only options were Good or Bad");
-		}
+
 	}
+
 }
